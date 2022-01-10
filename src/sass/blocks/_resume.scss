@@ -20,4 +20,43 @@
         grid-template-columns: repeat(2, 425px);
         column-gap: 135px;
     }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+
+                }
+            }
+        }
+
+    }
+    &__item {
+        &-head {
+            padding: 0 0 0 100px;
+        }
+    }
 }
