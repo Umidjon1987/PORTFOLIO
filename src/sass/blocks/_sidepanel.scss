@@ -8,6 +8,12 @@
     align-items: center;
     height: 340px;
     z-index: 3;
+    a {
+        &:hover {
+            stroke: red;
+            fill: red;
+        }
+    }
     &__divider {
         width: 2px;
         height: 70px;
